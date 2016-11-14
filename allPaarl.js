@@ -14,4 +14,5 @@ function allPaarl(regNumbers){
 const assert = require('assert');
 allFromPaarl = allPaarl('CA 182736,CY 523519,CJ 812328,CJ 111222,EC 812328');
 console.log(allFromPaarl);
+// Having complications when comparing array with assert.equal() method.
 assert.equal(allPaarl('CA 182736,CY 523519,CJ 812328,CJ 111222,EC 812328'),allFromPaarl);

@@ -14,6 +14,9 @@ function totalPhoneBill(record,balance){
       totalCost = totalCost + 0.75;
     }
   }
+  if(totalCost <= 0){
+    return 0;
+  }
   return balance-totalCost;
 }
 const assert = require('assert');

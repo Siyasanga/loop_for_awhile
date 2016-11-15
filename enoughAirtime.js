@@ -1,5 +1,5 @@
 // totalPhoneBill() takes in a string recording each phone call and sms sent
-// and calculates the total bill for the data provided.
+// and calculates the balance after subtracting the bill for the data provided.
 function totalPhoneBill(record,balance){
   var recordList = record.split(',');
   var totalCost = 0;
@@ -10,7 +10,7 @@ function totalPhoneBill(record,balance){
     else if(recordList[i] == "data"){
       totalCost = totalCost + 12;
     }
-    else{ // If its not a call then its an sms.
+    else{
       totalCost = totalCost + 0.75;
     }
   }
